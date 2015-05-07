@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Shoppingcart.Infrasturcture.Domain
 {
-    interface IRepository<T, TId>: IReadOnlyRepository<T, TId> where T:BaseEntity<TId>, IAggregateRoot
+    public interface IRepository<T, TId>: IReadOnlyRepository<T, TId> where T:BaseEntity<TId>, IAggregateRoot
     {
         void Save(T obj);
         void Update(T obj);

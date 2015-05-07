@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shoppingcart.Infrasturcture.Domain
 {  
-    interface IUnitOfWork
+    public interface IUnitOfWork
     {
         int Commit();
         Task CommitAsync();

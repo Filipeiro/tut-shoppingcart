@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Shoppingcart.Infrasturcture.Domain
 {
     
-    interface IReadOnlyRepository<T, TId> where T : BaseEntity<TId>, IAggregateRoot
+    public interface IReadOnlyRepository<T, TId> where T : BaseEntity<TId>, IAggregateRoot
     {
         T GetById(TId id);
         T Get(Expression<Func<T, bool>> where);
