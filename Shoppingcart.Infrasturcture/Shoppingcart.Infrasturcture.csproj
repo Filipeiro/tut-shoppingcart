@@ -40,8 +40,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Domain\BaseEntity.cs" />
     <Compile Include="Domain\IAggregateRoot.cs" />
+    <Compile Include="Domain\IReadOnlyRepository.cs" />
+    <Compile Include="Domain\IRepository.cs" />
+    <Compile Include="Domain\IUnitOfWork.cs" />
     <Compile Include="Domain\ValidationRule.cs" />
+    <Compile Include="Domain\ValueObjectBase.cs" />
+    <Compile Include="Domain\ValueObjectIsInvalidException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

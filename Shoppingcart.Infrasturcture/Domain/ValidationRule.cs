@@ -23,6 +23,10 @@ namespace Shoppingcart.Infrasturcture.Domain
             set { _property = value; }
         }
 
-        public string ru
+        public string Rule
+        {
+            get { return _rule; }
+            set { _rule = value; }
+        }
     }
 }
