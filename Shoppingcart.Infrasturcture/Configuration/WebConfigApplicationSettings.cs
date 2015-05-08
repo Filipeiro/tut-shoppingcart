@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,6 @@ namespace Shoppingcart.Infrasturcture.Domain.Configuration
 {
     public class WebConfigApplicationSettings : IApplicationSettings
     {
-        string LoggerName { get; }
+        public string LoggerName { get{ return ConfigurationManager.AppSettings["LoggerName"]}; }
     }
 }
