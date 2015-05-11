@@ -9,6 +9,6 @@ namespace Shoppingcart.Infrasturcture.Domain.Configuration
 {
     public class WebConfigApplicationSettings : IApplicationSettings
     {
-        public string LoggerName { get{ return ConfigurationManager.AppSettings["LoggerName"]}; }
+        public string LoggerName { get { return ConfigurationManager.AppSettings["LoggerName"]; } }
     }
 }
