@@ -9,5 +9,8 @@ namespace Shoppingcart.Infrasturcture.Domain.Configuration
     public interface IApplicationSettings
     {
         string LoggerName { get;}
+        
+        string EmailAddress { get; }
+        string Credential { get; }
     }
 }
