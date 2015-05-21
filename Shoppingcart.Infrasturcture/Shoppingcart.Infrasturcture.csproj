@@ -58,6 +58,8 @@
     <Compile Include="Email\EmailServiceFactory.cs" />
     <Compile Include="Email\IEmailService.cs" />
     <Compile Include="Email\SMTPService.cs" />
+    <Compile Include="Helpers\PriceHelper.cs" />
+    <Compile Include="Helpers\UrlHelper.cs" />
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\Log4NetAdapter.cs" />
     <Compile Include="Logging\LoggingFactory.cs" />
