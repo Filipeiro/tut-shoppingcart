@@ -11,8 +11,6 @@ namespace Shoppingcart.Infrasturcture.Email
 {
     public class SMTPService : IEmailService
     {
-        public void SendMail { get; set; }
-
         public void SendMail(string from, string to, string subject, string body)
         {
             MailMessage message = new MailMessage();
